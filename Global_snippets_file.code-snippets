@@ -1,0 +1,174 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+
+	//HTML
+	"Php var_dump in html": {
+		"scope": "html",
+		"prefix": "vardumphtml",
+		"body": [
+			"<pre style='min-width: 700px; min-height: 700px;'>",
+			"<div class='test-dump-here'></div>",
+			"<?var_dump();?>",
+			"</pre>"
+		],
+		"description": "Php var_dump in html"
+	},
+	"Php foreach in html": {
+		"scope": "html",
+		"prefix": "foreachhtml",
+		"body": [
+			"<?foreach($$a as $$key => $$b) {?>",
+			"<?}?>"
+		],
+		"description": "Php foreach in html"
+	},
+	"If in html": {
+		"scope": "html",
+		"prefix": "if",
+		"body": [
+			"<?if () {?>",
+			"<?}?>"
+		],
+		"description": "php if in html"
+	},
+	"If false in html": {
+		"scope": "html",
+		"prefix": "iffalse",
+		"body": [
+			"<?if (false) {?>",
+			"<?}?>"
+		],
+		"description": "php if false in html"
+	},
+	"If false else in html": {
+		"scope": "html",
+		"prefix": "iffelse",
+		"body": [
+			"<?if (false) {?>",
+			"<?} else {?>",
+			"<?}?>"
+		],
+		"description": "php if false in html"
+	},
+	//JS
+	"Print to console in js": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"If false in js": {
+		"scope": "javascript,typescript",
+		"prefix": "iffalse",
+		"body": [
+			"if (false) {",
+			"}"
+		],
+		"description": "Log output to console"
+	},
+	"On document ready": {
+		"scope": "javascript,typescript",
+		"prefix": "docready",
+		"body": [
+			"addEventListener('DOMContentLoaded', () => {",
+			"});"
+		],
+		"description": "On document ready"
+	},
+	//PHP
+	"If in php": {
+		"scope": "php",
+		"prefix": "iffalse",
+		"body": [
+			"if () {",
+			"}"
+		],
+		"description": "php if"
+	},
+	"If false in php": {
+		"scope": "php",
+		"prefix": "iffalse",
+		"body": [
+			"if (false) {",
+			"}"
+		],
+		"description": "php if false"
+	},
+	"Php var_dump in php": {
+		"scope": "php",
+		"prefix": "vardumpphp",
+		"body": [
+			"echo '<pre style=\"min-width: 700px; min-height: 700px;\">';",
+			"echo '<div class=\"test-dump-here\"></div>';",
+			"var_dump();",
+			"echo '</pre>';"
+		],
+		"description": "Php var_dump in php"
+	},
+	"Php substr in php": {
+		"scope": "php",
+		"prefix": "substr",
+		"body": [
+			"substr('text', 0, 3)",
+		],
+		"description": "Php substr in php"
+	},
+	//1C-Bitrix PHP
+	"Bitrix getcurdir": {
+		"scope": "php",
+		"prefix": "getcurdir",
+		"body": [
+			"$$APPLICATION->GetCurDir()"
+		],
+		"description": "Bitrix getcurdir"
+	},
+	"Bitrix Php ifcurdir": {
+		"scope": "php",
+		"prefix": "ifcurdir",
+		"body": [
+			"$$parentDir = '';",
+			"if (substr($$APPLICATION->GetCurDir(), 0, strlen($$parentDir)) === $$parentDir){",
+			"} else {",
+			"}"
+		],
+		"description": "Bitrix Php if cur dir inside specific dir"
+	},
+	"Bitrix isadmin": {
+		"scope": "php",
+		"prefix": "isadmin",
+		"body": [
+			"$$USER->IsAdmin()"
+		],
+		"description": "Bitrix isadmin"
+	},
+	//1C-Bitrix HTML
+	"Bitrix Html ifcurdir": {
+		"scope": "html",
+		"prefix": "ifcurdir",
+		"body": [
+			"<?$$parentDir = '';?>",
+			"<?if (substr($$APPLICATION->GetCurDir(), 0, strlen($$parentDir)) === $$parentDir){?>",
+			"<?} else {?>",
+			"<?}?>"
+		],
+		"description": "Bitrix Html if cur dir inside specific dir"
+	},
+	//CSS
+	"!important": {
+		"scope": "css",
+		"prefix": "imp",
+		"body": [
+			"!important"
+		],
+		"description": "!important mark for css"
+	},
+}
